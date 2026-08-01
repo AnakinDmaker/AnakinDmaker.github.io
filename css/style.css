@@ -1,41 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Courier New', monospace;
-  background: #14100D;
-  color: #EDE7DD;
+  font-family: 'Inter', sans-serif;
+  background: #F5F1EA;
+  color: #14100D;
   max-width: 700px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
   line-height: 1.7;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: multiply;
 }
 
 h1 {
-  color: #FF7800;
-  font-size: 2rem;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3.2rem;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 .tagline {
-  color: #B0A796;
-  margin-bottom: 30px;
+  color: #6B6255;
+  font-size: 0.95rem;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #14100D;
+  padding-bottom: 20px;
 }
 
 h2 {
-  color: #FF7800;
-  border-bottom: 1px solid #3A322A;
-  padding-bottom: 6px;
-  margin-top: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #FF7800;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
 .project {
-  background: #221C17;
-  border: 1px solid #3A322A;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 12px;
+  background: #FFFFFF;
+  border: 2px solid #14100D;
+  border-radius: 0;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+.project strong {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .project a {
-  color: #FFB066;
+  color: #FF7800;
+  font-weight: 600;
 }
 
 a {
@@ -44,10 +85,29 @@ a {
 
 .links a {
   display: inline-block;
-  margin-left: 12px;
-  background: #221C17;
-  border: 1px solid #FF7800;
-  border-radius: 6px;
-  padding: 8px 14px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background: #14100D;
+  color: #F5F1EA;
+  border: 2px solid #14100D;
+  border-radius: 0;
+  padding: 10px 18px;
   text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.links a:hover {
+  background: #FF7800;
+  border-color: #FF7800;
+  color: #14100D;
+}
+
+.project-image {
+  width: 100%;
+  border: 2px solid #14100D;
+  margin-bottom: 16px;
+  filter: grayscale(30%) contrast(1.1);
 }
