@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anakin D Maker — Embedded Systems & PCB Design</title>
-<link rel="shortcut icon" href="./img/Logo_AD.ico" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anakin D Maker — Embedded Systems & PCB Design</title>
+        <link rel="shortcut icon" href="./img/Logo_AD.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-  <aside class="sidebar">
-    <a href="#" class="logo-link" data-section="home">
-      <img src="img/Logo_AD.png" alt="Logo" class="sidebar-logo">
-    </a>
-    <nav class="sidebar-nav">
-      <a href="#" class="nav-item" data-section="about">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="9"/>
-          <line x1="12" y1="11" x2="12" y2="16"/>
-          <circle cx="12" cy="7.5" r="0.5" fill="currentColor"/>
-        </svg>
-        <span>About</span>
-      </a>
-      <a href="#" class="nav-item" data-section="projects">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="3" width="7" height="7"/>
-          <rect x="14" y="3" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/>
-          <rect x="14" y="14" width="7" height="7"/>
-        </svg>
-        <span>Projects</span>
-      </a>
-      <a href="#" class="nav-item" data-section="contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="5" width="18" height="14" rx="2"/>
-          <path d="M3 7l9 6 9-6"/>
-        </svg>
-        <span>Contact</span>
-      </a>
-    </nav>
-  </aside>
+        <aside class="sidebar">
+            <a href="#" class="logo-link" data-section="home">
+                <img src="img/Logo_AD.png" alt="Logo" class="sidebar-logo">
+            </a>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item" data-section="about">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <line x1="12" y1="11" x2="12" y2="16"/>
+                    <circle cx="12" cy="7.5" r="0.5" fill="currentColor"/>
+                    </svg>
+                    <span>About</span>
+                </a>
+                <a href="#" class="nav-item" data-section="projects">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"/>
+                    <rect x="14" y="3" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/>
+                    </svg>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="nav-item" data-section="contact">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="M3 7l9 6 9-6"/>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </aside>
 
-  <main class="content">
+        <main class="content">
 
-    <section id="home" class="page active">
-      <h1>Anakin D Maker</h1>
-      <p class="tagline">Electrical Engineering Student (Electronics) | Embedded Systems & PCB Design</p>
-    </section>
+            <section id="home" class="page active">
+                <h1>Anakin D Maker</h1>
+                <p class="tagline">Electrical Engineering Student (Electronics) | Embedded Systems & PCB Design</p>
+            </section>
 
-    <section id="about" class="page">
-      <h2>About</h2>
-      <p>Electrical engineering student at Kermanshah University of Technology, specializing in full-stack embedded product design — from schematic and PCB layout through firmware and browser-based control interfaces.</p>
-      <h2>Skills</h2>
-      <p>PCB Design (KiCad) · C/C++ · Arduino/ESP32/STM32 · PlatformIO · HTML/CSS/JavaScript · WebSerial API · Python (basic) · Git/GitHub</p>
-    </section>
+            <section id="about" class="page">
+                <h2>About</h2>
+                <p>Electrical engineering student at Kermanshah University of Technology, specializing in full-stack embedded product design — from schematic and PCB layout through firmware and browser-based control interfaces.</p>
+                <h2>Skills</h2>
+                <p>PCB Design (KiCad) · C/C++ · Arduino/ESP32/STM32 · PlatformIO · HTML/CSS/JavaScript · WebSerial API · Python (basic) · Git/GitHub</p>
+            </section>
 
-    <section id="projects" class="page">
-      <h2>Featured Project — Smart Identity Badge</h2>
-      <img src="img/badge-render.png" alt="Smart Identity Badge PCB render" class="project-image">
-      <div class="project">
-        <strong>badge-pcb</strong> — Custom 2-layer PCB design in KiCad: ESP32-S3, 16× WS2812B LEDs, capacitive touch, USB-C power.
-        <br><a href="https://github.com/AnakinDmaker/badge_pcb">View repo →</a>
-      </div>
-      <div class="project">
-        <strong>badge-firmware</strong> — C/C++ firmware with bidirectional JSON serial protocol and persistent settings.
-        <br><a href="https://github.com/AnakinDmaker/badge-firmware">View repo →</a>
-      </div>
-      <div class="project">
-        <strong>badge-web</strong> — Browser-based controller using the WebSerial API, no drivers required.
-        <br><a href="https://github.com/AnakinDmaker/badge-web">View repo →</a>
-      </div>
-    </section>
+            <section id="projects" class="page">
+                <h2>Featured Project — Smart Identity Badge</h2>
+                <img src="img/badge-render.png" alt="Smart Identity Badge PCB render" class="project-image">
+                <div class="project">
+                    <strong>badge-pcb</strong> — Custom 2-layer PCB design in KiCad: ESP32-S3, 16× WS2812B LEDs, capacitive touch, USB-C power.
+                    <br><a href="https://github.com/AnakinDmaker/badge_pcb">View repo →</a>
+                </div>
+                <div class="project">
+                    <strong>badge-firmware</strong> — C/C++ firmware with bidirectional JSON serial protocol and persistent settings.
+                    <br><a href="https://github.com/AnakinDmaker/badge-firmware">View repo →</a>
+                </div>
+                <div class="project">
+                    <strong>badge-web</strong> — Browser-based controller using the WebSerial API, no drivers required.
+                    <br><a href="https://github.com/AnakinDmaker/badge-web">View repo →</a>
+                </div>
+            </section>
 
-    <section id="contact" class="page">
-      <h2>Contact</h2>
-      <div class="links">
-        <a href="https://github.com/AnakinDmaker">GitHub</a>
-        <a href="resume-draft.docx" download>Download Resume</a>
-        <a href="mailto:makerdanakin@gmail.com">Email</a>
-      </div>
-    </section>
+            <section id="contact" class="page">
+                <h2>Contact</h2>
+                <div class="links">
+                    <a href="https://github.com/AnakinDmaker">GitHub</a>
+                    <a href="resume-draft.docx" download>Download Resume</a>
+                    <a href="mailto:makerdanakin@gmail.com">Email</a>
+                </div>
+            </section>
 
-  </main>
+        </main>
 
-  <script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
